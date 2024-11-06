@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "537966941111",
+    "firebase_url": "https://my-project-flutter-fire-default-rtdb.firebaseio.com",
     "project_id": "my-project-flutter-fire",
     "storage_bucket": "my-project-flutter-fire.firebasestorage.app"
   },

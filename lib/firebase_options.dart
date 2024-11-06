@@ -25,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         return windows;
       case TargetPlatform.linux:
@@ -49,6 +46,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '537966941111',
     projectId: 'my-project-flutter-fire',
     authDomain: 'my-project-flutter-fire.firebaseapp.com',
+    databaseURL: 'https://my-project-flutter-fire-default-rtdb.firebaseio.com',
     storageBucket: 'my-project-flutter-fire.firebasestorage.app',
   );
 
@@ -57,6 +55,7 @@ class DefaultFirebaseOptions {
     appId: '1:537966941111:android:b8a6bf1ba0f4f47221ce32',
     messagingSenderId: '537966941111',
     projectId: 'my-project-flutter-fire',
+    databaseURL: 'https://my-project-flutter-fire-default-rtdb.firebaseio.com',
     storageBucket: 'my-project-flutter-fire.firebasestorage.app',
   );
 
@@ -65,6 +64,7 @@ class DefaultFirebaseOptions {
     appId: '1:537966941111:ios:7a1cf1706c232c8121ce32',
     messagingSenderId: '537966941111',
     projectId: 'my-project-flutter-fire',
+    databaseURL: 'https://my-project-flutter-fire-default-rtdb.firebaseio.com',
     storageBucket: 'my-project-flutter-fire.firebasestorage.app',
     iosBundleId: 'com.example.flutterFire',
   );
@@ -75,6 +75,18 @@ class DefaultFirebaseOptions {
     messagingSenderId: '537966941111',
     projectId: 'my-project-flutter-fire',
     authDomain: 'my-project-flutter-fire.firebaseapp.com',
+    databaseURL: 'https://my-project-flutter-fire-default-rtdb.firebaseio.com',
     storageBucket: 'my-project-flutter-fire.firebasestorage.app',
   );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyDFWy1ASsQXfwmvGjGaJ3d2YrgmZ_9QN2c',
+    appId: '1:537966941111:ios:7a1cf1706c232c8121ce32',
+    messagingSenderId: '537966941111',
+    projectId: 'my-project-flutter-fire',
+    databaseURL: 'https://my-project-flutter-fire-default-rtdb.firebaseio.com',
+    storageBucket: 'my-project-flutter-fire.firebasestorage.app',
+    iosBundleId: 'com.example.flutterFire',
+  );
+
 }
